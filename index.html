@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Soyeon's Website</title>
+
+	<!-- CSS Stylesheet -->
+	<link rel="stylesheet" href="main.css">
+
+     <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dd79fac666.js" crossorigin="anonymous"></script>
+
+    <!-- Navbar Scroll Effect -->
+
+	<!-- <script>
+		// var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+
+				// When scroll is up
+			document.getElementsByClassName("nav").style.top = "0";
+			} else {
+				// When scroll is down
+			document.getElementsByClassName("nav").style.top = "-67px";
+			}
+			prevScrollpos = currentScrollPos;
+			}
+	</script> -->
+
+
+</head>
+<body>
+
+
+	<!-- Side bar -->
+	<div class="wrapper">
+		<div class="side_bar">
+				<a href="https://www.linkedin.com"><i class="fab fa-linkedin icon"></i></a>
+				<a href="https://github.com/"><i class="fab fa-github icon"></i></a>
+				<a href="https://codepen.io/"><i class="fab fa-codepen icon"></i></a>
+			   	<div class="email"> <a href="mailto:bcrornfl@gmail.com"> bcrornfl@gmail.com </a></div>
+		</div>
+	</div>
+
+
+
+	<!-- Navigation bar -->
+	<div class="nav">
+		<ul>
+			<li> <a href="#Home">Home</a> </li>
+			<li> <a href="#About_me">About me</a> </li>
+			<li> <a href="#project">Project</a> </li>
+			<li> <a href="#Contact">Contact</a> </li>
+		</ul>
+	</div>
+
+
+	<section id="Home">
+
+	<!-- Landing page -->
+			<div class="container">
+				<div class="main_message">
+					Hi I'm Soyeon
+				</div>
+				<div class="info_1">
+					Texas A&M University Computer Science 22'
+				</div>
+				<div class="info_2">
+					I love building website and web application
+				</div>
+
+			</div>
+
+	</section>
+
+
+	<!-- About me page -->
+	<section id="About_me">
+
+	<!-- Title -->
+		<div class="title">
+			<h1 class="section_name">About me</h1>
+			<div class="line"> <svg viewBox = "0 0 800 38"> <line x1="0" y1="35" x2="1000" y2="35" stroke="rgb(76,139,245)", stroke-width="2"/></svg></div>
+		</div>
+
+	<!-- Profile Photo -->
+		<img class="profile_photo" src="public/photo/profile-photo.png" alt="profile">
+
+	<!-- Bio -->
+	<div class="bio">
+		<div class="bio_paragraph">Hi my name is Soyeon (pronounce so-yon 🇰🇷)
+			I enjoy building website and web application.</div>
+
+		<div class="bio_paragraph">when I crete my project, I focus on intuitive user experience let alone beautiful design.<br></div>
+
+		<div class="bio_paragraph">I look forward to work on meaningful and various
+			project as a web developer! </div>
+
+
+	</div>
+
+
+	</section>
+
+	<!-- Project page -->
+	<section id="project">
+
+		<!-- Title -->
+		<div class="title">
+			<h1 class="section_name">Project</h1>
+			<div class="line"> <svg viewBox = "0 0 800 38"> <line x1="0" y1="35" x2="1000" y2="35" stroke="rgb(76,139,245)", stroke-width="2"/></svg></div>
+		</div>
+
+		<div class="container">
+
+		</div>
+
+
+	</div>
+
+
+	</section>
+
+
+	<!-- Contacts -->
+
+	<section id="Contact">
+
+		<!-- Title -->
+
+			<div class="title">
+				<h1 class="section_name">Contact</h1>
+				<div class="line"> <svg viewBox = "0 0 800 38"> <line x1="0" y1="35" x2="1000" y2="35" stroke="rgb(76,139,245)", stroke-width="2"/></svg></div>
+			</div>
+
+
+		<!-- Container -->
+			<div class="contact_container">
+				<!-- Get in Touch -->
+				<div class="main_message">Let's Get In Touch</div>
+				<div class="info_1">I'm currently looking for web-development internship</div>
+			</div>
+
+		<div class= "button_container">
+
+
+			<a download href="public/file/resume.pdf" class="contact_button">  Resume </a>
+			<a href="mailto:bcrornfl@gmail.com" class="contact_button "> Say Hi</a>
+
+		</div>
+
+
+	</section>
+
+
+
+
+  <!-- GSAP CDN-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+
+
+<!-- TweenMax Effect -->
+
+	<script>
+		TweenMax.to('.main_message', 1, {opacity:1 , y: -20, });
+	    TweenMax.to('.info_1', 1, {opacity:1 , y: -20, delay: 0.3});
+	    TweenMax.to('.info_2', 1, {opacity:1 , y: -20, delay: 0.4});
+	</script>
+
+  <!-- Scroll Magic CDN-->
+
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+
+
+<!-- Scroll Magic Effect -->
+
+	  <script>
+
+// var controller = new ScrollMagic.Controller();
+
+// About me
+var controller = new ScrollMagic.Controller();
+
+var scene1 = new ScrollMagic.Scene({
+    triggerElement: '#About_me',
+    reverse: false
+   })
+   // .addIndicators()
+   .setClassToggle('.profile_photo', 'visible')
+   .addTo(controller)
+
+
+var revealElements = document.getElementsByClassName("bio");
+    for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+      new ScrollMagic.Scene({
+                triggerElement: ".profile_photo",
+                reverse: false
+              })
+              .setClassToggle(revealElements[i], "visible") // add class toggle
+              // .addIndicators({name: "bio" + (i+1) }) // add indicators (requires plugin)
+              .addTo(controller);
+    }
+
+// Contact
+
+// var scene2 = new ScrollMagic.Scene({
+//     triggerElement: '#Contact',
+
+//    })
+//    .addIndicators()
+//    .setClassToggle('.contact_container', 'visible')
+//    .addTo(controller)
+
+// var scene3 = new ScrollMagic.Scene({
+// 	triggerElement: '.contact_containter',
+
+// 	})
+// 	.addIndicators()
+// 	.setClassToggle('.button_container', 'visible')
+// 	.addTo(controller)
+
+
+   </script>
+
+</body>
+</html>

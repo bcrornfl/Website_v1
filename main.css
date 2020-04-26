@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900|Ubuntu&display=swap');
+
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+	position: relative;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+/* Nav bar */
+
+.nav{
+	display:block;
+	width:100%;
+	position: fixed;
+	top:0;
+	z-index:1;
+	background-color: rgb(31,40,51);
+	transition: top, 0.3s;
+}
+
+.nav ul{
+	float: right;
+	padding: 0 ;
+	margin-right: 50px;
+
+}
+
+.nav ul li{
+	display: inline-block;
+	margin: 0.5rem 1rem;
+	font-weight: 400;
+}
+
+.nav a{
+	color: rgb(76,139,245);
+;
+}
+
+.nav a:hover{
+	color: rgb(255,255,255)
+}
+
+
+
+
+
+
+/* Landing page */
+
+#Home{
+
+	height: 100vh;
+	max-width:1000px;
+	display:flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.container{
+	text-align: center;
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+
+}
+.main_message{
+	margin: 0;
+	font-size: 6rem;
+	font-weight:900;
+	color: rgb(101, 119, 134);
+	margin: 0;
+}
+
+.info_1{
+	font-size: 1.6rem;
+	font-weight:700;
+	color:rgb(170, 184, 194);
+	margin: 0;
+	padding:10px 0;
+}
+
+.info_2{
+	font-size: 1.6rem;
+	font-weight:700;
+	color: rgb(225, 232, 237);
+	margin: 0;
+
+
+}
+
+
+
+
+/* Side bar*/
+
+.wrapper{
+
+	position: fixed;
+	top: 20%;
+
+}
+
+.side_bar{
+
+
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50px;
+	text-align: center;
+
+}
+
+.icon{
+
+	padding: 15px 0;
+	font-size: 30px;
+	height: 30px;
+	width: 30px;
+}
+
+
+.email{
+
+	font-family: 'Ubuntu', sans-serif;
+	transform: rotate(-180deg);
+	writing-mode: vertical-lr;
+	padding: 5px 5px 5px 5px;
+	margin-top: 50px;
+	bottom: 0;
+
+
+}
+
+.side_bar a{
+	color: rgb(76,139,245);
+
+}
+
+
+#About_me{
+
+	text-align: center;
+	max-width: 1000px;
+	height: 100vh;
+	margin: auto;
+
+}
+
+.title{
+	width: 100%;
+	padding-top: 100px;
+}
+
+.section_name{
+	float: left;
+	position: inline-block;
+	width:20%;
+	margin: 0;
+	color: rgb(76,139,245);
+	font-size: 2rem;
+	font-weight:700;
+
+}
+
+.line{
+	overflow:hidden;
+	float: right;
+	width: 80%;
+	position: inline-block;
+	height: 38px;
+}
+
+.profile_photo{
+	opacity: 0;
+	transform: translateY(-40px);
+	transition: all 1s ease-out;
+	display: block;
+	width: 150px;
+	padding: 80px 0 50px 0;
+	margin: 0 auto;
+
+}
+
+.profile_photo.visible{
+	opacity: 1;
+	transform: none;
+}
+
+.bio{
+	width: 50%;
+	margin: 0 auto;
+	line-height: 1.5em;
+	font-weight: 400;
+	font-size: 20px;
+	opacity: 0;
+	transform: translateY(-40px);
+	transition: all 1.5s ease-out;
+}
+
+.bio.visible{
+	opacity:1;
+	transform: none;
+}
+
+.bio_paragraph{
+	padding: 10px 0;
+}
+
+
+#project{
+	text-align: center;
+	max-width: 1000px;
+	height: 100vh;
+	margin: auto;
+
+}
+
+
+#Contact{
+
+	max-width: 1000px;
+	height: 100vh;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+.contact_container{
+
+	padding-top: 210px;
+	width: 100%;
+/*	opacity: 0;*/
+	transform: translateY(-40px);
+	transition: all 1s ease-out;
+
+}
+/*
+.contact_container.visible{
+	opacity: 1;
+	transform: none;
+}*/
+
+.button_container{
+	/*opacity: 0;*/
+	transform: translateY(-40px);
+	transition: all 1s ease-out;
+	padding-top: 20px;
+	margin: 0 auto;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/*.button_container.visible{
+	opacity: 1;
+	transform: none;
+}*/
+
+.contact_button{
+
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: rgb(84,82,77);
+	background-color: rgb(245, 248, 250) ;
+	border: 1px solid rgb(84,82,77, 0.5);
+	display: inline-block;
+	border-radius: 10px;
+	padding: 10px 25px;
+	transition: 0.3s;
+}
+
+
+.contact_button:hover{
+
+	color: rgb(29, 161, 242);
+	border-color: rgb(29, 161, 242);
+
+}
